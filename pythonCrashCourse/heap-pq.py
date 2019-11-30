@@ -37,6 +37,7 @@ class Person:
             return self.name < other.name
 
 heap = []
-heapq.heappush(heap, Person("Ann", 16))
-heqpq.heappush(heap, Person("Bob", 14))
-
+heapq.heappush(heap, Person("Ann", '16'))
+heapq.heappush(heap, Person("Bob", 14))
+heapq.heappush(heap, Person("Sam", 12))
+heapq.heappop(heap)
