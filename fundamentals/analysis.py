@@ -119,48 +119,48 @@ def exponential_run_time(N):
 # Say we have sorted of list of integers. I want to know some target,x, is the list.
 
 def approach_one(our_list, target):
-	for i in range(0, len(our_list)):
-		number = our_list[i]
-		if number == target:
-			return i
-	return -1
+    for i in range(0, len(our_list)):
+        number = our_list[i]
+        if number == target:
+            return i
+    return -1
 
 def approach_two(our_list, lo, hi, target):
-	# Check base case 
+    # Check base case 
     if hi >= lo: 
         mid = lo + (hi - lo)//2
-  
+
         # If element is present at the middle itself 
         if our_list[mid] == target: 
             return mid 
-          
+
         # If element is smaller than mid, then it  
         # can only be present in left subarray 
-        elif our_list[mid] > target: 
-            return approach_two(our_list, lo, mid-1, target) 
-  
-        # Else the element can only be present  
+    elif our_list[mid] > target: 
+        return approach_two(our_list, lo, mid-1, target) 
+
+    # Else the element can only be present  
         # in right subarray 
-        else: 
-            return approach_two(our_list, mid + 1, hi, target) 
-  
+    else: 
+        return approach_two(our_list, mid + 1, hi, target) 
+
     else: 
         # Element is not present in the array 
         return -1
 
 
 if __name__ == "__main__":
-	input_sizes = [5, 10, 20, 40]
-	num_samples = 100
-	for x in input_sizes:
-		input_size = 2 ** x
-		timer = Stopwatch()
-		input_list = range(0, input_size)
-		total_runtime = 0
-		for i in range(0, num_samples):
-			target = random.randint(0, input_size)
-			approach_two(input_list, 0, input_size - 1, target)
-			total_runtime += timer.elapsed_time()
-		print("2 ^ " + str(x) + " : " + str(timer.elapsed_time() / num_samples))
+    input_sizes = [5, 10, 20, 40]
+    num_samples = 100
+    for x in input_sizes:
+        input_size = 2 ** x
+        timer = Stopwatch()
+        input_list = range(0, input_size)
+        total_runtime = 0
+        for i in range(0, num_samples):
+            target = random.randint(0, input_size)
+            approach_two(input_list, 0, input_size - 1, target)
+            total_runtime += timer.elapsed_time()
+        print("2 ^ " + str(x) + " : " + str(timer.elapsed_time() / num_samples))
 
 
