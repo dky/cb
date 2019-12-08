@@ -1,5 +1,7 @@
 from stopwatch import Stopwatch
 
+# Quadratic: O(N^2)
+
 def quadratic_run_time(N):
     i = 1
     total_operations = 0
