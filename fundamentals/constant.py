@@ -8,8 +8,9 @@ def constant_run_time(N):
         total_sum += i
     return total_sum
 
-if __name__ == "__main":
-    input_sizes = [100, 200, 400, 800, 1600, 3200, 6400]
+if __name__ == "__main__":
+    input_sizes = [100, 200, 400, 800, 1600, 3200, 6400, 320000, 640000,
+            1280000]
     for input_size in input_sizes:
         time = Stopwatch()
         constant_run_time(input_size)
