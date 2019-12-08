@@ -1,5 +1,5 @@
 from stopwatch import Stopwatch
-# now matter how large n gets the runtime of our algorithm is constant.
+# no matter how large n gets the runtime of our algorithm is constant.
 
 def constant_run_time(N):
     total_sum = 0
