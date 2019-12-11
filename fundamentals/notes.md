@@ -41,3 +41,5 @@ Approximation determined on input size.
 - How long my program will run as my customers keep increasing?
 - I want to know how long my program will run as my inputs continue to grow in the future.
 - This is why it's important to understand algorithms at tech companies.
+
+- 6:29 - Beginning of Common orders of growth.
