@@ -6,6 +6,7 @@ from stopwatch import Stopwatch
 # 4 4
 # 6 6
 
+
 def linear_run_time(N):
     total_operations = 0
     i = 1
@@ -13,7 +14,6 @@ def linear_run_time(N):
         total_operations += 1
         i += 1
     return total_operations
-
 
 
 if __name__ == "__main__":
