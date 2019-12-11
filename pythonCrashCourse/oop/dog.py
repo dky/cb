@@ -15,6 +15,9 @@ class Dog:
     def speak(self, sound):
         return "{} says {}".format(self.name, sound)
 
+    def action(self, action):
+        return "{} Performing action {}".format(self.name, action)
+
 # Instantiate the Dog object
 lucky = Dog("Lucky", 13)
 print(lucky.name)
@@ -22,5 +25,6 @@ print(lucky.age)
 
 # Call instance methods
 print(lucky.description())
-print(lucky.speak("Howwww Chirp"))
+print(lucky.speak("Moo Mooo"))
+print(lucky.action("sit"))
 
