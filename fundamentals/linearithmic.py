@@ -1,7 +1,8 @@
 from stopwatch import Stopwatch
 
-#Linearithmic: O(N log N)
+# Linearithmic: O(N log N)
 # This should be much faster than quadratic
+
 
 def linearithmic_run_time(N):
     i = 1
@@ -20,6 +21,6 @@ if __name__ == "__main__":
     for input_size in input_sizes:
         timer = Stopwatch()
         total_operations = linearithmic_run_time(input_size)
-        #Total operations increases by 1 as we double the input size.
+        # Total operations increases by 1 as we double the input size.
 
         print(input_size, total_operations, timer.elapsed_time())
