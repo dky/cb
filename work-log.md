@@ -9,4 +9,6 @@
 ## 2019-11-26
 - Finish up Python fundamentals... 10:04AM
 
-## d
+## 2019-12-15
+
+Still on Fundamentals... What the f* are you doing?
