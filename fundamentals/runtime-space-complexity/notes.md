@@ -43,3 +43,6 @@ Approximation determined on input size.
 - This is why it's important to understand algorithms at tech companies.
 
 - 6:29 - Beginning of Common orders of growth.
+
+
+December 14, 2019 - Start getting lost around 23:07 quickly after summary.
