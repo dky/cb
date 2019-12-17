@@ -10,5 +10,6 @@
 - Finish up Python fundamentals... 10:04AM
 
 ## 2019-12-15
-
-Still on Fundamentals... What the f* are you doing?
+- Still on Fundamentals... What the f* are you doing?
+- Work through linked list
+- 3:16 gets really confusing...
