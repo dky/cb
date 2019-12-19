@@ -13,3 +13,6 @@
 - Still on Fundamentals... What the f* are you doing?
 - Work through linked list
 - 3:16 gets really confusing...
+
+## 2019-12-18 
+- Wrapped up ll implementation.

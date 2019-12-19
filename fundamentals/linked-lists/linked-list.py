@@ -12,18 +12,20 @@ class Node:
 class LinkedList:
     # Initialize linked list class
     def __init__(self):
+        # Initialize ll with dummy
         self.head = Node("dummy")
         # wth is size?
         # see size size(self) below.
         # [dummy]
-        self.size = 0
+        self._size = 0
 
     # Used for debugging
     def __str__(self):
         out = ""
         cur = self.head.next
         while (cur):
-            out += cur.item + "|"
+            out += str(cur.item) + "|"
+            cur = cur.next
         return out
 
     # Adds object to front of ll
@@ -36,7 +38,7 @@ class LinkedList:
         next = self.head.next
         self.head.next = Node(item)
         self.head.next.next = next
-        # self._size += 1
+        self._size += 1
 
     # Adds object to back of ll
     # To insert item at end of linked list we need to iterate through linked
@@ -66,14 +68,15 @@ class LinkedList:
         return self._size
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     linkedList = LinkedList()
     # add 5 items (1 => 5)
     for i in range(1, 6):
         linkedList.insertFront(i)
-    # should print 1|2|3|4|5
-    print(LinkedList)
-    # linkedList.removeBeginning()
-    # linkedList.removeBeginning()
+    print(linkedList)
+    linkedList.removeBeginning()
+    linkedList.removeBeginning()
+    print(linkedList)
     for i in range(6, 11):
-        # linkedList.insertLast()
+        linkedList.insertLast(i)
+    print(linkedList)
