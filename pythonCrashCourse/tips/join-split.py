@@ -6,7 +6,3 @@ print(words)
 space_character = " "
 sentence_with_spaces = space_character.join(words)
 print(sentence_with_spaces)
-
-
-
-

@@ -25,6 +25,7 @@ heapq.heappop(heap)
 # Alternatively, say you have a class and you want to add them to a heqpq. You
 # will need to implement a '__lt__' (les than) comparator method.
 
+
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -35,6 +36,7 @@ class Person:
             if self.name == other.name:
                 return self.age < other.age
             return self.name < other.name
+
 
 heap = []
 heapq.heappush(heap, Person("Ann", '16'))

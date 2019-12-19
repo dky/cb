@@ -1,9 +1,9 @@
-random_list = [5,1,3,4,2]
+random_list = [5, 1, 3, 4, 2]
 
 # Why are there multiple sorting methods?
 # `sorted` returns a new list.
 sorted_list = sorted(random_list)
-reverse_list = sorted(random_list, reverse = True)
+reverse_list = sorted(random_list, reverse=True)
 
 # Calling .sort() modifies the list.
 random_list.sort()
@@ -22,6 +22,7 @@ class Person:
         # Provides a string representation of this object.
     def __repr__(self):
         return repr((self.name, self.age))
+
 
 bob = Person("Bob", 14)
 sam = Person("Sam", 12)

@@ -1,12 +1,12 @@
-#Basic Functionality
-list = [] #Initializes empty list
+# Basic Functionality
+list = []  # Initializes empty list
 list.append(1)
 
 print(list)
 
 for i in range(0, 6):
     print(i)
-    list.append(i) #Each append takes O(1) time. Just like a stack.
+    list.append(i)  # Each append takes O(1) time. Just like a stack.
 
 print(list)
 print(len(list))
@@ -15,7 +15,7 @@ print(len(list))
 last_element = list.pop()
 
 print(last_element)
-print(list) #Notice the last element in the list is now gone...
+print(list)  # Notice the last element in the list is now gone...
 
 # Popping from the front of the list
 first_element = list.pop(0)

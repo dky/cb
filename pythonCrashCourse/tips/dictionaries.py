@@ -31,8 +31,3 @@ name_to_age_map["Sam"]
 # Careful not to do the following as it's O(n) runtime! This will check all
 # items in a list not a dictionary
 "Sam" in name_to_age_map.keys()
-
-
-
-
-
