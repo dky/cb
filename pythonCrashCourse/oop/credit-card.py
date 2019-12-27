@@ -11,6 +11,6 @@ class PrivateMethod:
 
 bankAcc = PrivateMethod()
 print(bankAcc.privateMethod())  # => SSN: MY_SOCIAL_SECURITY_NUMBER
-print(bankAcc.__privateMethod())
+# print(bankAcc.__privateMethod())  # fails with function not found...
 
 bankAcc.PrivateMethod

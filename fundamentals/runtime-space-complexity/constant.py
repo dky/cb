@@ -7,7 +7,7 @@ def constant_run_time(N):
     for i in range(0, 50):
         # Add all numbers from 0 to 50
         total_sum += i
-        print(total_sum)
+        # print(total_sum)
     return total_sum
 
 
