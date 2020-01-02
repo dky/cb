@@ -10,6 +10,7 @@ def approach_one(our_list, target):
     return -1
 
 
+# Choose a random integer and see how it grows.
 if __name__ == "__main__":
     input_sizes = [10000, 20000, 40000, 80000, 160000]
     for input_size in input_sizes:
