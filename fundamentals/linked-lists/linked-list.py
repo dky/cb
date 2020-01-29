@@ -71,11 +71,15 @@ class LinkedList:
 if __name__ == '__main__':
     linkedList = LinkedList()
     # add 5 items (1 => 5)
-    for i in range(1, 6):
-        linkedList.insertFront(i)
+    numbers = [5, 4, 3, 2, 1]
+
+    for num in numbers:
+        linkedList.insertFront(num)
+
     print(linkedList)
     linkedList.removeBeginning()
     linkedList.removeBeginning()
+
     print(linkedList)
     for i in range(6, 11):
         linkedList.insertLast(i)
