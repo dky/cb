@@ -100,3 +100,11 @@ if __name__ == '__main__':
 
     linkedList.reverseLinkedList()
     print(linkedList)
+
+    # create a new list
+    reverseList = LinkedList()
+    print(reverseList)
+    reverseList.reverseLinkedList()
+    print(reverseList)
+
+    reverseList.insertLast(10, 20, 40)
