@@ -2,6 +2,8 @@
 # Node objects have two attributes
 # item + next (pointer)
 
+# HEAD => 1 => 2 => 3 => NULL
+
 
 class Node:
     def __init__(self, item, next=None):
@@ -15,6 +17,7 @@ class LinkedList:
         self.head = Node("dummy")
         self._size = 0
 
+    # Prints output
     def __str__(self):
         # O(N) - Iterating through N items
         out = ""
@@ -27,9 +30,12 @@ class LinkedList:
     def insertFront(self, item):
         # H => 1 => 2   insert 3
         # H => 3 => 1 => 2
-        next = self.head.next  # assuming this gets 1
-        self.head.next = Node(item)
-        self.head.next.next = next
+        temporary = self.head.next  # gets 1
+        self.head.next = Node(item)  # overwrite 1 with 3
+        # H => 3 ~~~~   1 => 2
+        self.head.next.next = temporary
+        #  self.head.next = 3  -> 3.next = temporary
+        #  H => 3 => 1 => 2
         self._size += 1
 
     def insertLast(self, item):
@@ -37,7 +43,10 @@ class LinkedList:
         cur = self.head
         while (cur.next is not None):
             cur = cur.next
+        # After the loop cur.next has to be None which means this is the tail
+        # of the list
         cur.next = Node(item)
+        # push a new node to the tail of the list
         self._size += 1
 
     def removeBeginning(self):
@@ -54,7 +63,7 @@ class LinkedList:
 if __name__ == "__main__":
     linkedList = LinkedList()
     for i in range(1, 6):
-        linkedList.insertFront(i)
+        linkedList.insertLast(i)
     # should print 1|2|3|4|5
     print(linkedList)
     # should print 3|4|5
