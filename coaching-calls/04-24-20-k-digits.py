@@ -1,30 +1,40 @@
-def foo(s, k):
-    if k >= len(s):
-        return '0'
-    # use a stack
-    # while we have k left,
-    # and the previously seen element is larger than our currrent element,
-    # we should be popping
-    stack = []
-    # //[2, 6, 5]
-    # //5?
-    # 8 1
-    for i in range(len(s)):
-        while k != 0 and stack != [] and stack[-1] > s[i]:
-            stack.pop()
-            k -= 1
-        stack.append(s[i])
-    return ''.join(stack)
-
-
-# edge case 1
-# returns 11
+# Edge 1
 # s = '11'
+# returns 11?
 # k = 1
 
-# edge case 2
-# 0008? why?
+# Edge 2
 s = '10008'
 k = 1
+# returns 0008?
+
+
+def foo(s, k):
+    # print(len(s))
+    # if k >= len(s) return "0"
+    if k >= len(s):
+        return '0'
+
+    # init a stack
+    stack = []
+
+    for i in range(len(s)):
+        # print(i)
+        # Ensure k is not 0
+        # Ensure the stack is not empty
+
+        # print(s[i])
+        # print(stack[-1])
+        print(stack)
+
+        while k != 0 and stack != [] and stack[-1] > s[i]:
+            # pop off stack
+            stack.pop()
+            # decrement k
+            k -= 1
+        stack.append(s[i])
+    # return empty string joined to stack.
+    return ''.join(stack)
+
 
 print(foo(s, k))
