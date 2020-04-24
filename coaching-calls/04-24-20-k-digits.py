@@ -9,7 +9,7 @@ k = 1
 # returns 0008?
 
 
-def foo(s, k):
+def rmkd(s, k):
     # print(len(s))
     # if k >= len(s) return "0"
     if k >= len(s):
@@ -37,4 +37,4 @@ def foo(s, k):
     return ''.join(stack)
 
 
-print(foo(s, k))
+print(rmkd(s, k))
