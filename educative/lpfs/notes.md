@@ -2,3 +2,4 @@
 
 string[start:end:step]
 
+2. Bitwise ~, &, | 
